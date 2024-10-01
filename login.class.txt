@@ -1,0 +1,23 @@
+package mind;
+
+import java.util.*;
+
+public class sample_login {
+
+	public static void main(String[] args) {
+		
+		HashMap<String, String> loginCred = new HashMap<String, String>();
+		loginCred.put("inputUserName", "krishna12");
+		loginCred.put("inputPassword", "KriShna12");
+		String username = "krishna12";
+		String password = "KriShna12";
+		if(username.equals(loginCred.get("inputUserName")) 
+				&& password.equals(loginCred.get("inputPassword"))) {
+			System.out.println("Login Successful");
+		}
+		else {
+			System.out.println("Login Failed");
+		}
+	}
+
+}
